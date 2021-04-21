@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML > Unidad 2 > Actividad práctica 3: Contactanos</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+
+<body>
+	<header class="site-header">
+		<div class="container">
+			<h1 class="site-title">Rincón <i class="fas fa-leaf"></i> Verde</h1>
+			<nav class="site-navigation">
+				<ul>
+					<li><a href="./">Inicio</a></li>
+					<li><a href="nosotros.html">Nosotros</a></li>
+					<li><a href="registrate.html">Registrate</a></li>
+					<li><a href="contactanos.html">Contactanos</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main class="site-main">
+		<div class="container">
+			<div class="main-content">
+				<h2 class="main-title">¡El formulario se envió correctamente! :)</h2>
+				<p>Los siguientes datos fueron enviados:</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Campo de formulario</td>
+							<th>Valor del campo</td>
+						</tr>
+					</thead>
+					<tbody>
+						<script language="javascript">
+							var args = location.search.substr( 1 ).split( '&' );
+							for ( var i = 0; i < args.length; ++i ) {
+								var parts = args[ i ].split( '=' );
+								if ( parts != null ) {
+									var field = parts[ 0 ];
+									var value = parts[ 1 ];
+									if ( value == null ) {
+										value = "null"
+									}
+									else {
+										value = '"' + unescape( value.replace( /\+/g, ' ' ) ) + '"';
+									}
+
+									document.writeln( '<tr><td>' + field + '</td>' );
+									document.writeln( '<td>' + value + '</td></tr>' );
+								}
+							}
+						</script>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</main>
+	<footer class="site-footer">
+		<div class="container">
+			<div class="footer-content">
+				<ul class="social-media-links">
+					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

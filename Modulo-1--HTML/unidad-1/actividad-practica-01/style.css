@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,600;1,400;1,600&family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap");
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p,
+pre,
+blockquote,
+figure,
+hr {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #1e293b;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Zilla Slab", Arial, Helvetica, sans-serif;
+    line-height: 1;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: inherit;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+	color: #0d9488;
+	text-decoration: none;
+	transition: color 0.24s ease, background-color 0.24s ease;
+}
+
+a:focus,
+a:hover {
+	color: #2dd4bf;
+}
+
+* + h1,
+* + h2,
+* + h3,
+* + h4,
+* + h5,
+* + h6,
+* + p,
+* + ul,
+* + ol,
+* + table {
+    margin-top: 1.25em;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul,
+ol {
+    padding: 0 1.75rem;
+}
+
+li {
+    padding-left: 0.325em;
+}
+
+li + li {
+    margin-top: 0.5em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead tr {
+    background-color: #e2e8f0;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #f1f5f9;
+}
+
+table th,
+table td {
+    padding: 4px 12px;
+}
+
+.container {
+    width: 100%;
+    max-width: 720px;
+    padding: 0 12px;
+    margin: 0 auto;
+}
+
+.site-header {
+    background-color: #0d9488;
+    display: flex;
+}
+
+.site-title {
+    font-family: "Zilla Slab", Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    padding: 8px;
+    margin: 24px 0 12px;
+}
+
+.site-navigation {
+    background-color: #0f766e;
+    border-radius: 12px 12px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.site-navigation ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+}
+
+.site-navigation li {
+    font-family: "Zilla Slab", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.site-navigation a {
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 12px 16px;
+}
+
+.site-navigation li:first-child a {
+    border-radius: 12px 12px 0 0;
+}
+
+.site-navigation a:focus,
+.site-navigation a:hover {
+    color: #2a2a35;
+    background-color: #ecfccb;
+}
+
+.site-main {
+    text-align: justify;
+}
+
+.main-content {
+    background-color: #f8fafc;
+    padding: 20px;
+}
+
+.main-title {
+    text-align: center;
+}
+
+.main-image {
+}
+
+* + .main-image {
+    margin-top: 20px;
+}
+
+.main-image + * {
+    margin-top: 24px;
+}
+
+.site-footer {
+    display: flex;
+    text-align: center;
+	margin-bottom: 20px;
+}
+
+.footer-content {
+    background-color: #1e293b;
+    padding: 20px 0;
+    border-radius: 0 0 12px 12px;
+}
+
+.footer-content .social-media-links {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.footer-content .social-media-links li {
+    padding: 0;
+    margin: 0 8px;
+}
+
+.footer-content .social-media-links a {
+	font-size: 24px;
+    color: #94a3b8;
+}
+
+.footer-content .social-media-links a:focus,
+.footer-content .social-media-links a:hover {
+    color: #e2e8f0;
+}
+
+@media only screen and (min-width: 400px) {
+    .site-navigation ul {
+        flex-direction: row;
+        width: auto;
+    }
+
+    .site-navigation li:first-child a {
+        border-radius: 0;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .main-content {
+        padding: 32px;
+    }
+}
