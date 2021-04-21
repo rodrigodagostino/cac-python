@@ -48,7 +48,7 @@
 										value = "null"
 									}
 									else {
-										value = '"' + unescape( value.replace( /\+/g, ' ' ) ) + '"';
+										value = '"' + decodeURI( value.replace( /\+/g, ' ' ) ) + '"';
 									}
 
 									document.writeln( '<tr><td>' + field + '</td>' );

@@ -213,6 +213,7 @@ button i {
 .column {
 	flex: 1;
 	display: flex;
+	justify-content: center;
 }
 
 .site-header {
@@ -283,6 +284,10 @@ button i {
 .main-section {
 	background-color: #f8fafc;
 	padding: 20px;
+}
+
+.main-content {
+	min-height: 480px;
 }
 
 .main-section.is-highlighted {
@@ -483,16 +488,4 @@ button i {
 	left: 0;
 	z-index: 10;
 	font-size: 0;
-}
-
-.text-start {
-	text-align: left;
-}
-
-.text-center {
-	text-align: center;
-}
-
-.text-end {
-	text-align: right;
 }

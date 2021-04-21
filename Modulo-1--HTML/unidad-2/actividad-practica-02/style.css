@@ -205,6 +205,7 @@ table td {
 .main-content {
     background-color: #f8fafc;
     padding: 20px;
+    min-height: 480px;
 }
 
 .main-title {
