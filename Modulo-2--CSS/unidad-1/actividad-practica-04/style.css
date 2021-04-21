@@ -366,6 +366,10 @@ button i {
 	color: #e2e8f0;
 }
 
+.form-field {
+	width: 100%;
+}
+
 .form-field label {
 	display: block;
 	font-size: 14px;
