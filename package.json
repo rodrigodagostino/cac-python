@@ -1,0 +1,28 @@
+{
+  "name": "codo-a-codo",
+  "version": "1.0.0",
+  "description": "Actividades prácticas resueltas durante el curso de Python.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodrigodagostino/cac-python.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "python"
+  ],
+  "author": "Rodrigo D’Agostino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodrigodagostino/cac-python/issues"
+  },
+  "homepage": "https://github.com/rodrigodagostino/cac-python#readme",
+  "devDependencies": {
+    "eslint": "^7.25.0"
+  }
+}
