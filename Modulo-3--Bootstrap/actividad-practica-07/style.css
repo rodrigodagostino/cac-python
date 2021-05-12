@@ -508,7 +508,6 @@ button i + span {
 	height: 0;
 	padding-bottom: 56%;
 	overflow: hidden;
-	background-size: cover;
 }
 
 .card-image {
