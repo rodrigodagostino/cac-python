@@ -261,28 +261,30 @@ if ( eighteenPrompt !== null ) {
 // - 9-10: Sobresaliente
 const nineteenPrompt = prompt( '¿Que nota obtuviste?' )
 if ( nineteenPrompt !== null && nineteenPrompt.trim() !== '' ) {
-	if ( nineteenPrompt >= 0 && nineteenPrompt <= 3 ) {
-		document.write(
-			`Obtuviste una nota de ${ nineteenPrompt }, a la cual le corresponde una calificación de “Muy deficiente”.`
-		)
-	} else if ( nineteenPrompt >= 3 && nineteenPrompt <= 5 ) {
-		document.write(
-			`Obtuviste una nota de ${ nineteenPrompt }, a la cual le corresponde una calificación de “Insuficiente”.`
-		)
-	} else if ( nineteenPrompt >= 5 && nineteenPrompt <= 6 ) {
-		document.write(
-			`Obtuviste una nota de ${ nineteenPrompt }, a la cual le corresponde una calificación de “Suficiente”.`
-		)
-	} else if ( nineteenPrompt >= 6 && nineteenPrompt <= 7 ) {
-		document.write( `Obtuviste una nota de ${ nineteenPrompt }, a la cual le corresponde una calificación de “Bien”.` )
-	} else if ( nineteenPrompt >= 7 && nineteenPrompt <= 9 ) {
-		document.write(
-			`Obtuviste una nota de ${ nineteenPrompt }, a la cual le corresponde una calificación de “Notable”.`
-		)
-	} else if ( nineteenPrompt >= 9 && nineteenPrompt <= 10 ) {
-		document.write(
-			`Obtuviste una nota de ${ nineteenPrompt }, a la cual le corresponde una calificación de “Sobresaliente”.`
-		)
+	if ( nineteenPrompt >= 0 && nineteenPrompt <= 10 ) {
+		if ( nineteenPrompt <= 3 ) {
+			document.write(
+				`Obtuviste una nota de ${ nineteenPrompt }, a la cual le corresponde una calificación de “Muy deficiente”.`
+			)
+		} else if ( nineteenPrompt <= 5 ) {
+			document.write(
+				`Obtuviste una nota de ${ nineteenPrompt }, a la cual le corresponde una calificación de “Insuficiente”.`
+			)
+		} else if ( nineteenPrompt <= 6 ) {
+			document.write(
+				`Obtuviste una nota de ${ nineteenPrompt }, a la cual le corresponde una calificación de “Suficiente”.`
+			)
+		} else if ( nineteenPrompt <= 7 ) {
+			document.write( `Obtuviste una nota de ${ nineteenPrompt }, a la cual le corresponde una calificación de “Bien”.` )
+		} else if ( nineteenPrompt <= 9 ) {
+			document.write(
+				`Obtuviste una nota de ${ nineteenPrompt }, a la cual le corresponde una calificación de “Notable”.`
+			)
+		} else {
+			document.write(
+				`Obtuviste una nota de ${ nineteenPrompt }, a la cual le corresponde una calificación de “Sobresaliente”.`
+			)
+		}
 	} else {
 		document.write( `Obtuviste una nota de ${ nineteenPrompt }, la cual no es válida.` )
 	}
