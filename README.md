@@ -7,3 +7,4 @@ En este repositorio se publicarán mis trabajos resueltos durante el curso de Py
 03. [HTML > Actividad práctica Nº03](https://rodrigodagostino.github.io/cac-python/Modulo-1--HTML/unidad-2/actividad-practica-03/)
 04. [CSS > Actividad práctica Nº04](https://rodrigodagostino.github.io/cac-python/Modulo-2--CSS/unidad-1/actividad-practica-04/)
 07. [Bootstrap > Actividad práctica Nº07](https://rodrigodagostino.github.io/cac-python/Modulo-3--Bootstrap/actividad-practica-07/)
+08. [JavaScript > Actividad práctica Nº08](https://rodrigodagostino.github.io/cac-python/Modulo-4--JavaScript/unidad-1/actividad-practica-08/)
