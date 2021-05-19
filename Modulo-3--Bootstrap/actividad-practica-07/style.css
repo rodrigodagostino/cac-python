@@ -273,7 +273,7 @@ button i + span {
 	width: 100%;
 }
 
-.main-menu li {
+.main-menu-item {
 	font-family: "Zilla Slab", Arial, Helvetica, sans-serif;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -282,21 +282,25 @@ button i + span {
 	margin: 0;
 }
 
-.main-menu a {
+.main-menu-item a {
 	color: white;
 	text-align: center;
 	width: 100%;
 	padding: 12px 16px;
 }
 
-.main-menu li:last-child a {
+.main-menu-item:last-child a {
 	border-radius: 0 0 12px 12px;
 }
 
-.main-menu a:focus,
-.main-menu a:hover {
+.main-menu-item a:focus,
+.main-menu-item a:hover {
 	color: #2a2a35;
 	background-color: #ecfccb;
+}
+
+.main-menu-item.is-current {
+	background-color: #115e59;
 }
 
 .menu-toggle {
