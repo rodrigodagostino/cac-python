@@ -33,7 +33,7 @@ hr {
 body {
 	height: 100%;
 	font-family: "Open Sans", Arial, Helvetica, sans-serif;
-	font-size: 18px;
+	font-size: 1.125rem;
 	line-height: 1.5;
 	color: #1e293b;
 }
@@ -50,23 +50,23 @@ h6 {
 }
 
 h1 {
-	font-size: 40px;
+	font-size: 2.5rem;
 }
 
 h2 {
-	font-size: 32px;
+	font-size: 2rem;
 }
 
 h3 {
-	font-size: 28px;
+	font-size: 1.75rem;
 }
 
 h4 {
-	font-size: 24px;
+	font-size: 1.5rem;
 }
 
 h5 {
-	font-size: 20px;
+	font-size: 1.25rem;
 }
 
 h6 {
@@ -143,18 +143,18 @@ table tbody tr:nth-child(odd) {
 table th,
 table td {
 	text-align: left;
-	padding: 8px 12px;
+	padding: 0.5rem 0.75rem;
 }
 
 table td {
-	font-size: 16px;
+	font-size: 1rem;
 }
 
 input {
 	font-family: inherit;
-	border-radius: 4px;
+	border-radius: 0.25rem;
 	border: 1px solid #cbd5e1;
-	padding: 8px;
+	padding: 0.5rem;
 	transition: border-color 0.2s ease;
 	outline: none;
 }
@@ -174,14 +174,14 @@ input:focus {
 
 button {
 	font-family: "Zilla Slab", Arial, Helvetica, sans-serif;
-	font-size: 18px;
+	font-size: 1.125rem;
 	text-transform: uppercase;
 	color: white;
 	background-color: #0d9488;
-	border-radius: 4px;
+	border-radius: 0.25rem;
 	border: none;
 	outline: none;
-	padding: 8px 12px;
+	padding: 0.5rem 0.75rem;
 	cursor: pointer;
 	transition: color 0.2s ease, background-color 0.2s ease, opacity 0.15s ease !important;
 }
@@ -196,19 +196,19 @@ button:active {
 }
 
 button i + span {
-	margin-left: 8px;
+	margin-left: 0.5rem;
 }
 
 .container {
 	width: 100%;
-	max-width: 720px;
-	padding: 0 12px;
+	max-width: 45rem;
+	padding: 0 0.75rem;
 	margin: 0 auto;
 }
 
 .columns + .columns,
 .column + .column {
-	margin-top: 20px;
+	margin-top: 1.25rem;
 }
 
 .column {
@@ -226,12 +226,12 @@ button i + span {
 
 .site-title {
 	font-family: "Zilla Slab", Arial, Helvetica, sans-serif;
-	font-size: 28px;
+	font-size: 1.75rem;
 	color: white;
 	font-weight: 600;
 	text-align: center;
-	padding: 8px;
-	margin: 12px 0;
+	padding: 0.5rem;
+	margin: 1rem 0 0.75rem;
 	transition: font-size 0.24s ease;
 }
 
@@ -252,13 +252,13 @@ button i + span {
 .site-navigation__top::before {
 	content: "";
 	opacity: 0;
-	width: 48px;
-	height: 48px;
+	width: 3rem;
+	height: 3rem;
 }
 
 .site-navigation__bottom {
 	background-color: #0f766e;
-	border-radius: 0 0 12px 12px;
+	border-radius: 0 0 0.75rem 0.75rem;
 	position: absolute;
 	top: 100%;
 	width: 100%;
@@ -286,11 +286,11 @@ button i + span {
 	color: white;
 	text-align: center;
 	width: 100%;
-	padding: 12px 16px;
+	padding: 0.75rem 1rem;
 }
 
 .main-menu-item:last-child a {
-	border-radius: 0 0 12px 12px;
+	border-radius: 0 0 0.75rem 0.75rem;
 }
 
 .main-menu-item a:focus,
@@ -304,8 +304,8 @@ button i + span {
 }
 
 .menu-toggle {
-	font-size: 24px;
-	padding: 4px 12px;
+	font-size: 1.5rem;
+	padding: 0.25rem 0.75rem;
 }
 
 .site-main {
@@ -319,11 +319,11 @@ button i + span {
 .main-content,
 .main-section {
 	background-color: #f8fafc;
-	padding: 32px 20px 32px;
+	padding: 2rem 1.25rem;
 }
 
 .main-content {
-	min-height: 480px;
+	min-height: 30rem;
 }
 
 .main-section.is-highlighted {
@@ -361,27 +361,27 @@ button i + span {
 }
 
 .main-image {
-	border-radius: 12px;
+	border-radius: 0.75rem;
 }
 
 * + .main-image {
-	margin-top: 20px;
+	margin-top: 1.25rem;
 }
 
 .main-image + * {
-	margin-top: 24px;
+	margin-top: 1.5rem;
 }
 
 .site-footer {
 	display: flex;
 	text-align: center;
-	margin-bottom: 20px;
+	margin-bottom: 1.25rem;
 }
 
 .footer-content {
 	background-color: #1e293b;
-	padding: 20px 0;
-	border-radius: 0 0 12px 12px;
+	padding: 1.25rem 0;
+	border-radius: 0 0 0.75rem 0.75rem;
 }
 
 .footer-content .social-media-links {
@@ -394,11 +394,11 @@ button i + span {
 
 .footer-content .social-media-links li {
 	padding: 0;
-	margin: 0 8px;
+	margin: 0 0.5rem;
 }
 
 .footer-content .social-media-links a {
-	font-size: 24px;
+	font-size: 1.5rem;
 	color: #94a3b8;
 }
 
@@ -413,11 +413,11 @@ button i + span {
 
 .form-field label {
 	display: block;
-	font-size: 14px;
+	font-size: 0.875rem;
 }
 
 .form-field label + input {
-	margin-top: 4px;
+	margin-top: 0.25rem;
 }
 
 .form-field input {
@@ -434,24 +434,24 @@ button i + span {
 	display: inline-block;
 }
 
-@media only screen and (min-width: 420px) {
+@media only screen and (min-width: 26.25em) {
 	.columns {
 		display: flex;
 	}
 
 	.column + .column {
 		margin-top: 0;
-		margin-left: 20px;
+		margin-left: 1.25rem;
 	}
 
 	.site-title {
-		font-size: 32px;
+		font-size: 2rem;
 	}
 }
 
-@media only screen and (min-width: 572px) {
+@media only screen and (min-width: 35.75em) {
 	.site-title {
-		font-size: 40px;
+		font-size: 2.5rem;
 	}
 
 	.site-navigation__top {
@@ -460,7 +460,7 @@ button i + span {
 
 	.site-navigation__bottom {
 		position: relative;
-		border-radius: 12px 12px 0 0;
+		border-radius: 0.75rem 0.75rem 0 0;
 		display: block !important;
 	}
 
@@ -480,17 +480,17 @@ button i + span {
 	}
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 37.5em) {
 	.main-content,
 	.main-section {
-		padding: 40px 32px 40px;
+		padding: 2.5rem 2rem;
 	}
 }
 
 .card {
 	display: flex;
 	flex-direction: column;
-	border-radius: 12px;
+	border-radius: 0.75rem;
 	overflow: hidden;
 	position: relative;
 	width: 100%;
@@ -524,7 +524,7 @@ button i + span {
 .card-content {
 	flex: 1;
 	background-color: #f1f5f9;
-	padding: 12px 0 16px;
+	padding: 0.75rem 0 1rem;
 }
 
 .card:focus .card-content,
@@ -533,10 +533,10 @@ button i + span {
 }
 
 .card-title {
-	font-size: 24px;
+	font-size: 1.5rem;
 	text-align: center;
-	margin-left: 16px;
-	margin-right: 16px;
+	margin-left: 1rem;
+	margin-right: 1rem;
 	transition: color 0.24s ease;
 }
 
@@ -554,11 +554,11 @@ button i + span {
  * Bootstrap
  */
 .carousel {
-	margin: 0 -12px;
+	margin: 0 -0.75rem;
 }
 
 .carousel-item {
-	height: 280px;
+	height: 17.5rem;
 }
 
 .carousel-item a {
@@ -585,12 +585,12 @@ button i + span {
 		rgba(0, 0, 0, 0.4) 80%,
 		rgba(0, 0, 0, 0) 96%
 	);
-	padding: 16px 20px 20px;
-	margin: 0 -20px 40px;
+	padding: 1rem 1.25rem 1.25rem;
+	margin: 0 -1.25rem 2.5rem;
 }
 
 .carousel-caption h3 {
-	text-shadow: 0 0 4px rgba(0, 0, 0, 0.64);
+	text-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.64);
 }
 
 .carousel-control-prev,
@@ -598,12 +598,12 @@ button i + span {
 	border-radius: 0;
 }
 
-@media only screen and (min-width: 572px) {
+@media only screen and (min-width: 35.75em) {
 	.carousel {
 		margin: 0;
 	}
 
 	.carousel-item {
-		height: 360px;
+		height: 22.5rem;
 	}
 }

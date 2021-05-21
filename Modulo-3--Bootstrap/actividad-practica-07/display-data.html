@@ -19,77 +19,79 @@
 </head>
 
 <body>
-	<header class="site-header">
-		<div class="container">
-			<nav class="site-navigation">
-				<div class="site-navigation__top">
-					<a href="./">
-						<h1 class="site-title">Rincón <i class="fas fa-leaf"></i> Verde</h1>
-					</a>
-					<button class="menu-toggle" type="button" data-bs-toggle="collapse"
-						data-bs-target="#collapsible-nav" aria-expanded="false" aria-controls="collapsible-nav">
-						<i class="fas fa-bars" aria-hidden="true"></i>
-					</button>
+	<div class="site">
+		<header class="site-header">
+			<div class="container">
+				<nav class="site-navigation">
+					<div class="site-navigation__top">
+						<a href="./">
+							<h1 class="site-title">Rincón <i class="fas fa-leaf"></i> Verde</h1>
+						</a>
+						<button class="menu-toggle" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapsible-nav" aria-expanded="false" aria-controls="collapsible-nav">
+							<i class="fas fa-bars" aria-hidden="true"></i>
+						</button>
+					</div>
+					<div id="collapsible-nav" class="site-navigation__bottom collapse">
+						<ul class="main-menu">
+							<li class="main-menu-item"><a href="./">Inicio</a></li>
+							<li class="main-menu-item"><a href="nosotros.html">Nosotros</a></li>
+							<li class="main-menu-item"><a href="registrate.html">Registrate</a></li>
+							<li class="main-menu-item"><a href="contactanos.html">Contactanos</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<main class="site-main">
+			<div class="container">
+				<div class="main-content">
+					<h2 class="main-title">¡El formulario se envió correctamente! :)</h2>
+					<p>Los siguientes datos fueron enviados:</p>
+					<table>
+						<thead>
+							<tr>
+								<th>Campo de formulario</td>
+								<th>Valor del campo</td>
+							</tr>
+						</thead>
+						<tbody>
+							<script language="javascript">
+								var args = location.search.substr( 1 ).split( '&' );
+								for ( var i = 0; i < args.length; ++i ) {
+									var parts = args[ i ].split( '=' );
+									if ( parts != null ) {
+										var field = parts[ 0 ];
+										var value = parts[ 1 ];
+										if ( value == null ) {
+											value = "null"
+										}
+										else {
+											value = '"' + decodeURI( value.replace( /\+/g, ' ' ) ) + '"';
+										}
+
+										document.writeln( '<tr><td>' + field + '</td>' );
+										document.writeln( '<td>' + value + '</td></tr>' );
+									}
+								}
+							</script>
+						</tbody>
+					</table>
 				</div>
-				<div id="collapsible-nav" class="site-navigation__bottom collapse">
-					<ul class="main-menu">
-						<li class="main-menu-item"><a href="./">Inicio</a></li>
-						<li class="main-menu-item"><a href="nosotros.html">Nosotros</a></li>
-						<li class="main-menu-item"><a href="registrate.html">Registrate</a></li>
-						<li class="main-menu-item"><a href="contactanos.html">Contactanos</a></li>
+			</div>
+		</main>
+		<footer class="site-footer">
+			<div class="container">
+				<div class="footer-content">
+					<ul class="social-media-links">
+						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
 					</ul>
 				</div>
-			</nav>
-		</div>
-	</header>
-	<main class="site-main">
-		<div class="container">
-			<div class="main-content">
-				<h2 class="main-title">¡El formulario se envió correctamente! :)</h2>
-				<p>Los siguientes datos fueron enviados:</p>
-				<table>
-					<thead>
-						<tr>
-							<th>Campo de formulario</td>
-							<th>Valor del campo</td>
-						</tr>
-					</thead>
-					<tbody>
-						<script language="javascript">
-							var args = location.search.substr( 1 ).split( '&' );
-							for ( var i = 0; i < args.length; ++i ) {
-								var parts = args[ i ].split( '=' );
-								if ( parts != null ) {
-									var field = parts[ 0 ];
-									var value = parts[ 1 ];
-									if ( value == null ) {
-										value = "null"
-									}
-									else {
-										value = '"' + decodeURI( value.replace( /\+/g, ' ' ) ) + '"';
-									}
-
-									document.writeln( '<tr><td>' + field + '</td>' );
-									document.writeln( '<td>' + value + '</td></tr>' );
-								}
-							}
-						</script>
-					</tbody>
-				</table>
 			</div>
-		</div>
-	</main>
-	<footer class="site-footer">
-		<div class="container">
-			<div class="footer-content">
-				<ul class="social-media-links">
-					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-					<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-				</ul>
-			</div>
-		</div>
-	</footer>
+		</footer>
+	</div>
 </body>
 
 </html>

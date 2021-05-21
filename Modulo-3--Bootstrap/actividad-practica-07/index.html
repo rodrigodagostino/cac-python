@@ -19,173 +19,175 @@
 </head>
 
 <body>
-	<header class="site-header">
-		<div class="container">
-			<nav class="site-navigation">
-				<div class="site-navigation__top">
-					<a href="./">
-						<h1 class="site-title">Rincón <i class="fas fa-leaf"></i> Verde</h1>
-					</a>
-					<button class="menu-toggle" type="button" data-bs-toggle="collapse"
-						data-bs-target="#collapsible-nav" aria-expanded="false" aria-controls="collapsible-nav">
-						<i class="fas fa-bars" aria-hidden="true"></i>
+	<div class="site">
+		<header class="site-header">
+			<div class="container">
+				<nav class="site-navigation">
+					<div class="site-navigation__top">
+						<a href="./">
+							<h1 class="site-title">Rincón <i class="fas fa-leaf"></i> Verde</h1>
+						</a>
+						<button class="menu-toggle" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapsible-nav" aria-expanded="false" aria-controls="collapsible-nav">
+							<i class="fas fa-bars" aria-hidden="true"></i>
+						</button>
+					</div>
+					<div id="collapsible-nav" class="site-navigation__bottom collapse">
+						<ul class="main-menu">
+							<li class="main-menu-item is-current"><a href="./">Inicio</a></li>
+							<li class="main-menu-item"><a href="nosotros.html">Nosotros</a></li>
+							<li class="main-menu-item"><a href="registrate.html">Registrate</a></li>
+							<li class="main-menu-item"><a href="contactanos.html">Contactanos</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<main class="site-main">
+			<div class="container">
+				<section id="carousel-captions" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carousel-captions" data-bs-slide-to="0" class="active"
+							aria-current="true" aria-label="Diapositiva 1"></button>
+						<button type="button" data-bs-target="#carousel-captions" data-bs-slide-to="1"
+							aria-label="Diapositiva 2"></button>
+						<button type="button" data-bs-target="#carousel-captions" data-bs-slide-to="2"
+							aria-label="Diapositiva 3"></button>
+						<button type="button" data-bs-target="#carousel-captions" data-bs-slide-to="3"
+							aria-label="Diapositiva 4"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<a href="./recetas/tofu-casero.html">
+								<img src="https://images.unsplash.com/photo-1596352670192-5a95e357df7b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=696&q=80"
+									alt="Persona sosteniendo un plato de cerámica azul y blanco con una pieza grande de tofu dentro.">
+								<div class="carousel-caption d-none d-md-block">
+									<h3>Tofu casero</h3>
+								</div>
+							</a>
+						</div>
+						<div class="carousel-item">
+							<a href="./recetas/pastel-de-papas-y-carne-vegetal.html">
+								<img src="https://www.mdzol.com/u/fotografias/m/2021/3/18/f1456x819-1032576_1202946_4956.jpg"
+									alt="Pequeña porción de pastel de papas servida sobre un plato de porcelana.">
+								<div class="carousel-caption d-none d-md-block">
+									<h3>Pastel de papas y carne vegetal</h3>
+								</div>
+							</a>
+						</div>
+						<div class="carousel-item">
+							<a href="./recetas/galletas-danesas-de-matequilla.html">
+								<img src="https://images.unsplash.com/photo-1585419961556-cd854d9c1efe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=696&q=80"
+									alt="Galletitas danesas apiladas una encima de de la otra sobre una mesa.">
+								<div class="carousel-caption d-none d-md-block">
+									<h3>Galletas danesas de mantequilla</h3>
+								</div>
+							</a>
+						</div>
+						<div class="carousel-item">
+							<a href="./recetas/barritas-de-chocolate-rellenas-de-crema.html">
+								<img src="https://tastyk-4ec7.kxcdn.com/wp-content/uploads/2017/07/IMG_5765.jpg"
+									alt="Barritas de chocolate similares a las de Kinder Bueno servidas sobre una mesa de madera.">
+								<div class="carousel-caption d-none d-md-block">
+									<h3>Barritas de chocolate rellenas de crema</h3>
+								</div>
+							</a>
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carousel-captions"
+						data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
 					</button>
-				</div>
-				<div id="collapsible-nav" class="site-navigation__bottom collapse">
-					<ul class="main-menu">
-						<li class="main-menu-item is-current"><a href="./">Inicio</a></li>
-						<li class="main-menu-item"><a href="nosotros.html">Nosotros</a></li>
-						<li class="main-menu-item"><a href="registrate.html">Registrate</a></li>
-						<li class="main-menu-item"><a href="contactanos.html">Contactanos</a></li>
+					<button class="carousel-control-next" type="button" data-bs-target="#carousel-captions"
+						data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</section>
+				<section class="main-section">
+					<h2 class="section-title">Nuestras últimas recetas</h2>
+					<div class="columns">
+						<div class="column">
+							<div class="card">
+								<figure class="card-figure">
+									<img class="card-image"
+										src="https://images.unsplash.com/photo-1596352670192-5a95e357df7b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=360&q=80"
+										alt="Persona sosteniendo un plato de cerámica azul y blanco con una pieza grande de tofu dentro.">
+								</figure>
+								<div class="card-content">
+									<h3 class="card-title">Tofu casero</h3>
+								</div>
+								<a class="card-overlay" href="./recetas/tofu-casero.html">Tofu casero</a>
+							</div>
+						</div>
+						<div class="column">
+							<div class="card">
+								<figure class="card-figure">
+									<img class="card-image"
+										src="https://www.mdzol.com/u/fotografias/m/2021/3/18/f1456x819-1032576_1202946_4956.jpg"
+										alt="Pequeña porción de pastel de papas servida sobre un plato de porcelana.">
+								</figure>
+								<div class="card-content">
+									<h3 class="card-title">Pastel de papas y carne vegetal</h3>
+								</div>
+								<a class="card-overlay" href="./recetas/pastel-de-papas-y-carne-vegetal.html">Pastel de
+									papas y carne vegetal</a>
+							</div>
+						</div>
+					</div>
+					<div class="columns">
+						<div class="column">
+							<div class="card">
+								<figure class="card-figure">
+									<img class="card-image"
+										src="https://images.unsplash.com/photo-1585419961556-cd854d9c1efe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
+										alt="Galletitas danesas apiladas una encima de de la otra sobre una mesa.">
+								</figure>
+								<div class="card-content">
+									<h3 class="card-title">Galletas danesas de mantequilla</h3>
+								</div>
+								<a class="card-overlay" href="./recetas/galletas-danesas-de-matequilla.html">Galletas
+									danesas de mantequilla</a>
+							</div>
+						</div>
+						<div class="column">
+							<div class="card">
+								<figure class="card-figure">
+									<img class="card-image"
+										src="https://tastyk-4ec7.kxcdn.com/wp-content/uploads/2017/07/IMG_5765.jpg"
+										alt="Barritas de chocolate similares a las de Kinder Bueno servidas sobre una mesa de madera.">
+								</figure>
+								<div class="card-content">
+									<h3 class="card-title">Barritas de chocolate rellenas de crema</h3>
+								</div>
+								<a class="card-overlay"
+									href="./recetas/barritas-de-chocolate-rellenas-de-crema.html">Barritas de chocolate
+									rellenas de crema</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="main-section is-highlighted">
+					<h2 class="section-title">Donde encontrarnos</h2>
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.039056891173!2d-64.19610194926803!3d-31.41304998131392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432987fc1bae853%3A0x474f32b252a0ff81!2sRincon%20Verde!5e0!3m2!1sen!2sar!4v1618971264658!5m2!1sen!2sar"
+						width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</section>
+			</div>
+		</main>
+		<footer class="site-footer">
+			<div class="container">
+				<div class="footer-content">
+					<ul class="social-media-links">
+						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
 					</ul>
 				</div>
-			</nav>
-		</div>
-	</header>
-	<main class="site-main">
-		<div class="container">
-			<section id="carousel-captions" class="carousel slide" data-bs-ride="carousel">
-				<div class="carousel-indicators">
-					<button type="button" data-bs-target="#carousel-captions" data-bs-slide-to="0" class="active"
-						aria-current="true" aria-label="Diapositiva 1"></button>
-					<button type="button" data-bs-target="#carousel-captions" data-bs-slide-to="1"
-						aria-label="Diapositiva 2"></button>
-					<button type="button" data-bs-target="#carousel-captions" data-bs-slide-to="2"
-						aria-label="Diapositiva 3"></button>
-					<button type="button" data-bs-target="#carousel-captions" data-bs-slide-to="3"
-						aria-label="Diapositiva 4"></button>
-				</div>
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<a href="./recetas/tofu-casero.html">
-							<img src="https://images.unsplash.com/photo-1596352670192-5a95e357df7b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=696&q=80"
-								alt="Persona sosteniendo un plato de cerámica azul y blanco con una pieza grande de tofu dentro.">
-							<div class="carousel-caption d-none d-md-block">
-								<h3>Tofu casero</h3>
-							</div>
-						</a>
-					</div>
-					<div class="carousel-item">
-						<a href="./recetas/pastel-de-papas-y-carne-vegetal.html">
-							<img src="https://www.mdzol.com/u/fotografias/m/2021/3/18/f1456x819-1032576_1202946_4956.jpg"
-								alt="Pequeña porción de pastel de papas servida sobre un plato de porcelana.">
-							<div class="carousel-caption d-none d-md-block">
-								<h3>Pastel de papas y carne vegetal</h3>
-							</div>
-						</a>
-					</div>
-					<div class="carousel-item">
-						<a href="./recetas/galletas-danesas-de-matequilla.html">
-							<img src="https://images.unsplash.com/photo-1585419961556-cd854d9c1efe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=696&q=80"
-								alt="Galletitas danesas apiladas una encima de de la otra sobre una mesa.">
-							<div class="carousel-caption d-none d-md-block">
-								<h3>Galletas danesas de mantequilla</h3>
-							</div>
-						</a>
-					</div>
-					<div class="carousel-item">
-						<a href="./recetas/barritas-de-chocolate-rellenas-de-crema.html">
-							<img src="https://tastyk-4ec7.kxcdn.com/wp-content/uploads/2017/07/IMG_5765.jpg"
-								alt="Barritas de chocolate similares a las de Kinder Bueno servidas sobre una mesa de madera.">
-							<div class="carousel-caption d-none d-md-block">
-								<h3>Barritas de chocolate rellenas de crema</h3>
-							</div>
-						</a>
-					</div>
-				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#carousel-captions"
-					data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#carousel-captions"
-					data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				</button>
-			</section>
-			<section class="main-section">
-				<h2 class="section-title">Nuestras últimas recetas</h2>
-				<div class="columns">
-					<div class="column">
-						<div class="card">
-							<figure class="card-figure">
-								<img class="card-image"
-									src="https://images.unsplash.com/photo-1596352670192-5a95e357df7b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=360&q=80"
-									alt="Persona sosteniendo un plato de cerámica azul y blanco con una pieza grande de tofu dentro.">
-							</figure>
-							<div class="card-content">
-								<h3 class="card-title">Tofu casero</h3>
-							</div>
-							<a class="card-overlay" href="./recetas/tofu-casero.html">Tofu casero</a>
-						</div>
-					</div>
-					<div class="column">
-						<div class="card">
-							<figure class="card-figure">
-								<img class="card-image"
-									src="https://www.mdzol.com/u/fotografias/m/2021/3/18/f1456x819-1032576_1202946_4956.jpg"
-									alt="Pequeña porción de pastel de papas servida sobre un plato de porcelana.">
-							</figure>
-							<div class="card-content">
-								<h3 class="card-title">Pastel de papas y carne vegetal</h3>
-							</div>
-							<a class="card-overlay" href="./recetas/pastel-de-papas-y-carne-vegetal.html">Pastel de
-								papas y carne vegetal</a>
-						</div>
-					</div>
-				</div>
-				<div class="columns">
-					<div class="column">
-						<div class="card">
-							<figure class="card-figure">
-								<img class="card-image"
-									src="https://images.unsplash.com/photo-1585419961556-cd854d9c1efe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
-									alt="Galletitas danesas apiladas una encima de de la otra sobre una mesa.">
-							</figure>
-							<div class="card-content">
-								<h3 class="card-title">Galletas danesas de mantequilla</h3>
-							</div>
-							<a class="card-overlay" href="./recetas/galletas-danesas-de-matequilla.html">Galletas
-								danesas de mantequilla</a>
-						</div>
-					</div>
-					<div class="column">
-						<div class="card">
-							<figure class="card-figure">
-								<img class="card-image"
-									src="https://tastyk-4ec7.kxcdn.com/wp-content/uploads/2017/07/IMG_5765.jpg"
-									alt="Barritas de chocolate similares a las de Kinder Bueno servidas sobre una mesa de madera.">
-							</figure>
-							<div class="card-content">
-								<h3 class="card-title">Barritas de chocolate rellenas de crema</h3>
-							</div>
-							<a class="card-overlay"
-								href="./recetas/barritas-de-chocolate-rellenas-de-crema.html">Barritas de chocolate
-								rellenas de crema</a>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="main-section is-highlighted">
-				<h2 class="section-title">Donde encontrarnos</h2>
-				<iframe
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.039056891173!2d-64.19610194926803!3d-31.41304998131392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432987fc1bae853%3A0x474f32b252a0ff81!2sRincon%20Verde!5e0!3m2!1sen!2sar!4v1618971264658!5m2!1sen!2sar"
-					width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-			</section>
-		</div>
-	</main>
-	<footer class="site-footer">
-		<div class="container">
-			<div class="footer-content">
-				<ul class="social-media-links">
-					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-					<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-				</ul>
 			</div>
-		</div>
-	</footer>
+		</footer>
+	</div>
 </body>
 
 </html>

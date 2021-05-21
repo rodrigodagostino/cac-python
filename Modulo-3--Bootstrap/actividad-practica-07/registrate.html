@@ -19,143 +19,145 @@
 </head>
 
 <body>
-	<header class="site-header">
-		<div class="container">
-			<nav class="site-navigation">
-				<div class="site-navigation__top">
-					<a href="./">
-						<h1 class="site-title">Rincón <i class="fas fa-leaf"></i> Verde</h1>
-					</a>
-					<button class="menu-toggle" type="button" data-bs-toggle="collapse"
-						data-bs-target="#collapsible-nav" aria-expanded="false" aria-controls="collapsible-nav">
-						<i class="fas fa-bars" aria-hidden="true"></i>
-					</button>
+	<div class="site">
+		<header class="site-header">
+			<div class="container">
+				<nav class="site-navigation">
+					<div class="site-navigation__top">
+						<a href="./">
+							<h1 class="site-title">Rincón <i class="fas fa-leaf"></i> Verde</h1>
+						</a>
+						<button class="menu-toggle" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapsible-nav" aria-expanded="false" aria-controls="collapsible-nav">
+							<i class="fas fa-bars" aria-hidden="true"></i>
+						</button>
+					</div>
+					<div id="collapsible-nav" class="site-navigation__bottom collapse">
+						<ul class="main-menu">
+							<li class="main-menu-item"><a href="./">Inicio</a></li>
+							<li class="main-menu-item"><a href="nosotros.html">Nosotros</a></li>
+							<li class="main-menu-item is-current"><a href="registrate.html">Registrate</a></li>
+							<li class="main-menu-item"><a href="contactanos.html">Contactanos</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<main class="site-main">
+			<div class="container">
+				<div class="main-content">
+					<h2 class="main-title">Registrate</h2>
+					<form action="display-data.html">
+						<div class="columns">
+							<div class="column">
+								<div class="form-field">
+									<label for="first-name">Nombre</label>
+									<input type="text" id="first-name" name="first-name">
+								</div>
+							</div>
+							<div class="column">
+								<div class="form-field">
+									<label for="last-name">Apellido</label>
+									<input type="text" id="last-name" name="last-name">
+								</div>
+							</div>
+						</div>
+						<div class="columns">
+							<div class="column">
+								<div class="form-field">
+									<label for="address">Dirección</label>
+									<input type="text" id="address" name="address">
+								</div>
+							</div>
+							<div class="column">
+								<div class="form-field">
+									<label for="city">Ciudad</label>
+									<input type="text" id="city" name="city">
+								</div>
+							</div>
+						</div>
+						<div class="columns">
+							<div class="column">
+								<div class="form-field">
+									<label for="postal-code">Código postal</label>
+									<input type="number" id="postal-code" name="postal-code">
+								</div>
+							</div>
+							<div class="column">
+								<div class="form-field">
+									<label for="birth-date">Fecha de nacimiento</label>
+									<input type="date" id="birth-date" name="birth-date">
+								</div>
+							</div>
+						</div>
+						<div class="columns">
+							<div class="column">
+								<div class="form-field">
+									<label>Estudios</label>
+									<div>
+										<input type="checkbox" id="primary-studies" name="primary-studies">
+										<label for="primary-studies">Primarios</label>
+									</div>
+									<div>
+										<input type="checkbox" id="secondary-studies" name="secondary-studies">
+										<label for="secondary-studies">Secundarios</label>
+									</div>
+									<div>
+										<input type="checkbox" id="terciary-studies" name="terciary-studies">
+										<label for="terciary-studies">Terciarios</label>
+									</div>
+									<div>
+										<input type="checkbox" id="university-studies" name="university-studies">
+										<label for="university-studies">Universitarios</label>
+									</div>
+									<div>
+										<input type="checkbox" id="other-studies" name="other-studies">
+										<label for="other-studies">Otro</label>
+									</div>
+								</div>
+							</div>
+							<div class="column">
+								<div class="form-field">
+									<label>Género</label>
+									<div>
+										<input type="radio" id="male" name="gender" value="male-gender">
+										<label for="male">Masculino</label>
+									</div>
+									<div>
+										<input type="radio" id="female" name="gender" value="female-gender">
+										<label for="female">Femenino</label>
+									</div>
+									<div>
+										<input type="radio" id="other-gender" name="gender" value="other-gender">
+										<label for="other-gender">Otro</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="columns">
+							<div class="column">
+								<button type="submit">
+									<i class="fab fa-telegram-plane"></i>
+									<span>Enviar</span>
+								</button>
+							</div>
+						</div>
+					</form>
 				</div>
-				<div id="collapsible-nav" class="site-navigation__bottom collapse">
-					<ul class="main-menu">
-						<li class="main-menu-item"><a href="./">Inicio</a></li>
-						<li class="main-menu-item"><a href="nosotros.html">Nosotros</a></li>
-						<li class="main-menu-item is-current"><a href="registrate.html">Registrate</a></li>
-						<li class="main-menu-item"><a href="contactanos.html">Contactanos</a></li>
+			</div>
+		</main>
+		<footer class="site-footer">
+			<div class="container">
+				<div class="footer-content">
+					<ul class="social-media-links">
+						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
 					</ul>
 				</div>
-			</nav>
-		</div>
-	</header>
-	<main class="site-main">
-		<div class="container">
-			<div class="main-content">
-				<h2 class="main-title">Registrate</h2>
-				<form action="display-data.html">
-					<div class="columns">
-						<div class="column">
-							<div class="form-field">
-								<label for="first-name">Nombre</label>
-								<input type="text" id="first-name" name="first-name">
-							</div>
-						</div>
-						<div class="column">
-							<div class="form-field">
-								<label for="last-name">Apellido</label>
-								<input type="text" id="last-name" name="last-name">
-							</div>
-						</div>
-					</div>
-					<div class="columns">
-						<div class="column">
-							<div class="form-field">
-								<label for="address">Dirección</label>
-								<input type="text" id="address" name="address">
-							</div>
-						</div>
-						<div class="column">
-							<div class="form-field">
-								<label for="city">Ciudad</label>
-								<input type="text" id="city" name="city">
-							</div>
-						</div>
-					</div>
-					<div class="columns">
-						<div class="column">
-							<div class="form-field">
-								<label for="postal-code">Código postal</label>
-								<input type="number" id="postal-code" name="postal-code">
-							</div>
-						</div>
-						<div class="column">
-							<div class="form-field">
-								<label for="birth-date">Fecha de nacimiento</label>
-								<input type="date" id="birth-date" name="birth-date">
-							</div>
-						</div>
-					</div>
-					<div class="columns">
-						<div class="column">
-							<div class="form-field">
-								<label>Estudios</label>
-								<div>
-									<input type="checkbox" id="primary-studies" name="primary-studies">
-									<label for="primary-studies">Primarios</label>
-								</div>
-								<div>
-									<input type="checkbox" id="secondary-studies" name="secondary-studies">
-									<label for="secondary-studies">Secundarios</label>
-								</div>
-								<div>
-									<input type="checkbox" id="terciary-studies" name="terciary-studies">
-									<label for="terciary-studies">Terciarios</label>
-								</div>
-								<div>
-									<input type="checkbox" id="university-studies" name="university-studies">
-									<label for="university-studies">Universitarios</label>
-								</div>
-								<div>
-									<input type="checkbox" id="other-studies" name="other-studies">
-									<label for="other-studies">Otro</label>
-								</div>
-							</div>
-						</div>
-						<div class="column">
-							<div class="form-field">
-								<label>Género</label>
-								<div>
-									<input type="radio" id="male" name="gender" value="male-gender">
-									<label for="male">Masculino</label>
-								</div>
-								<div>
-									<input type="radio" id="female" name="gender" value="female-gender">
-									<label for="female">Femenino</label>
-								</div>
-								<div>
-									<input type="radio" id="other-gender" name="gender" value="other-gender">
-									<label for="other-gender">Otro</label>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="columns">
-						<div class="column">
-							<button type="submit">
-								<i class="fab fa-telegram-plane"></i>
-								<span>Enviar</span>
-							</button>
-						</div>
-					</div>
-				</form>
 			</div>
-		</div>
-	</main>
-	<footer class="site-footer">
-		<div class="container">
-			<div class="footer-content">
-				<ul class="social-media-links">
-					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-					<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-				</ul>
-			</div>
-		</div>
-	</footer>
+		</footer>
+	</div>
 </body>
 
 </html>
