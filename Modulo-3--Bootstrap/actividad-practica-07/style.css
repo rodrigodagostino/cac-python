@@ -199,6 +199,11 @@ button i + span {
 	margin-left: 0.5rem;
 }
 
+.site {
+	display: flex;
+	flex-direction: column;
+}
+
 .container {
 	width: 100%;
 	max-width: 45rem;
