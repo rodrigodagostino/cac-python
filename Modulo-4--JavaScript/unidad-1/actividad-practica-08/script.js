@@ -316,42 +316,66 @@ if ( e19_prompt !== null && e19_prompt.trim() !== '' ) {
 
 // 20. Realiza un script que pida cadenas de texto hasta que se pulse “cancelar”.
 // Al salir con “cancelar” deben mostrarse todas las cadenas concatenadas con un guión.
-const e20_storedValues = []
-const e20_function = () => {
-	const e20_prompt = prompt(
+const e20A_storedValues = []
+const e20A_promptMessage = 'Danos una frase y presioná “Aceptar” para formar una cadena.\r\nSi presionás “Cancelar”, se finalizará el proceso.'
+let e20A_prompt = prompt( e20A_promptMessage )
+while ( e20A_prompt !== null ) {
+	e20A_storedValues.push( e20A_prompt )
+	e20A_prompt = prompt( e20A_promptMessage )
+}
+document.write( `<p>Estas son las cadenas de texto acumuladas: ${ e20A_storedValues.join( '-' ) }</p>` )
+
+
+const e20B_storedValues = []
+const e20B_function = () => {
+	const e20B_prompt = prompt(
 		'Danos una frase y presioná “Aceptar” para formar una cadena.\r\nSi presionás “Cancelar”, se finalizará el proceso.'
 	)
-	if ( e20_prompt === null ) {
-		document.write( `<p>Estas son las cadenas de texto acumuladas: ${ e20_storedValues.join( '-' ) }</p>` )
+	if ( e20B_prompt === null ) {
+		document.write( `<p>Estas son las cadenas de texto acumuladas: ${ e20B_storedValues.join( '-' ) }</p>` )
 		return
 	}
-	e20_storedValues.push( e20_prompt )
-	e20_function()
+	e20B_storedValues.push( e20B_prompt )
+	e20B_function()
 }
-e20_function()
+e20B_function()
 
 // 21. Realiza un script que pida números hasta que se pulse “cancelar”.
 // Si no es un número deberá indicarse con un «alert» y seguir pidiendo.
 // Al salir con “cancelar” deberá indicarse la suma total de los números introducidos.
-const e21_storedValues = []
-const e21_function = () => {
-	const e21_prompt = prompt(
+const e21A_storedValues = []
+const e21A_promptMessage = 'Danos un número y presioná “Aceptar” para formar un cadena.\r\nSi presionás “Cancelar”, se finalizará el proceso.' 
+let e21A_prompt = prompt( e21A_promptMessage )
+while ( e21A_prompt !== null ) {
+	if ( isNaN( +e21A_prompt ) ) {
+		alert( 'Recordá que sólo podés ingresar números.' )
+	} else if ( e21A_prompt.trim() !== '' ) {
+		e21A_storedValues.push( e21A_prompt )
+		e21A_prompt = prompt( e21A_promptMessage )
+	}
+}
+document.write( `<p>Estos son los números acumulados: ${ e21A_storedValues.reduce( ( a, b ) => +a + +b ) }.</p>` )
+
+
+const e21B_storedValues = []
+const e21B_function = () => {
+	const e21B_prompt = prompt(
 		'Danos un número y presioná “Aceptar” para formar un cadena.\r\nSi presionás “Cancelar”, se finalizará el proceso.'
 	)
-	if ( e21_prompt === null ) {
-		document.write( `<p>Estos son los números acumulados: ${ e21_storedValues.join( ', ' ) }.</p>` )
+	if ( e21B_prompt === null ) {
+		document.write( `<p>Estos son los números acumulados: ${ e21A_storedValues.reduce( ( a, b ) => +a + +b ) }.</p>` )
 		return
 	}
 
-	if ( isNaN( +e21_prompt ) ) {
+	if ( isNaN( +e21B_prompt ) ) {
 		alert( 'Recordá que sólo podés ingresar números.' )
-	} else if ( e21_prompt.trim() !== '' ) {
-		e21_storedValues.push( e21_prompt )
+	} else if ( e21B_prompt.trim() !== '' ) {
+		e21B_storedValues.push( e21B_prompt )
 	}
 
-	e21_function()
+	e21B_function()
 }
-e21_function()
+e21B_function()
 
 // 22. Realizar una página con un script que calcule el valor de la letra de un número de DNI.
 // El algoritmo para calcular la letra del dni es el siguiente:
@@ -362,7 +386,8 @@ e21_function()
 // - Si lo introducido no es un número deberá indicarse con un alert y volver a preguntar.
 // - Deberá de repetirse el proceso hasta que el usuario pulse «cancelar».
 const e22_storedValues = []
-const e22LettersArray = [ 'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E' ]
+const e22LettersArray = [ 'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B',
+	'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E' ]
 const e22_function = () => {
 	const e22_prompt = prompt(
 		'Danos un número de DNI (sin puntos) y presioná “Aceptar” para codificarlo.\r\nSi presionás “Cancelar”, se finalizará el proceso'
